@@ -6,35 +6,35 @@
 
 class ProcessParser {
 public:
-    static std::string getCmd(std::string pid);
+    static string getCmd(string pid);
 
-    static std::vector <std::string> getPidList();
+    static vector<string> getPidList();
 
-    static std::string getVmSize(std::string pid);
+    static string getVmSize(string pid);
 
-    static std::string getCpuPercent(std::string pid);
+    static string getCpuPercent(string pid);
 
     static long int getSysUpTime();
 
-    static std::string getProcUpTime(std::string pid);
+    static string getProcUpTime(string pid);
 
-    static std::string getProcUser(std::string pid);
+    static string getProcUser(string pid);
 
-    static std::vector <std::string> getSysCpuPercent(std::string coreNumber = "");
+    static vector<string> getSysCpuPercent(string coreNumber = "");
 
-    static std::string getSysRamPercent();
+    static string getSysRamPercent();
 
-    static std::string getSysKernelVersion();
+    static string getSysKernelVersion();
 
-    static std::string getTotalThreads();
+    static string getTotalThreads();
 
-    static std::string getTotalNumberOfProcesses();
+    static string getTotalNumberOfProcesses();
 
-    static std::string getNumberOfRunningProcesses();
+    static string getNumberOfRunningProcesses();
 
     static string getOsName();
 
-    static std::string printCpuStats(std::vector <std::string> values1, std::vector <std::string> values2);
+    static string printCpuStats(vector <string> values1, vector <string> values2);
 };
 
 #endif
